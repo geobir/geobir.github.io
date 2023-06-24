@@ -1,0 +1,266 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+*/
+:root{
+    --color: #FAFAFE;
+    --secondaryColor: #4f7abe;
+}
+/* ************** RESET ************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ****************************** */
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  background-color: var(--color);
+}
+p strong {
+  font-weight: 900;
+}
+
+.contain {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  min-height: 70vh;
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  background-image: url("../resources/background.png");
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  min-height: 5vh;
+  text-align: center;
+  margin: auto;
+}
+
+.footer p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+.hands {
+  background-image:url("../resources/hands.png");
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.whiteColor {
+  color: var(--color);
+}
+
+h1, h2{
+  font-weight: 900;
+  font-size: 5rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+.card > a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--secondaryColor);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.blank,
+.other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card > a {
+  margin-bottom: 2em;
+}
+
+.item {
+  padding: 0 10px;
+  display: flex;
+  max-width: 320px;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+/*
+.item li {
+  list-style-position: inside;
+  list-style-type: disc;
+}*/
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;;
+}
+
+/* Carousel*/
+.reviews {
+  width : 600px; 
+  height : 150px;
+  overflow : hidden ;
+  background-color : #fff ;
+  border-radius : 5px;
+  margin : 50px auto ;
+  position : relative ;
+  box-shadow : 0 0 10px -2px #ddd ;
+}
+.panel {
+  width : 100%;
+  max-height: 100%;
+  position : absolute ; 
+}
+.PanelAct {
+  left : 0 ;
+}
+.panel img { 
+  width : 100px;
+  height : 100px; 
+  text-align : center ;
+  float : left ; 
+  margin : 25px; 
+}
+/*== Removal Start
+png images background
+==*/
+.panel:nth-of-type(1) img {
+    background : #12aedb ;
+}
+.panel:nth-of-type(2) img {
+    background : #db4646 ;
+}
+.panel:nth-of-type(3) img {
+    background : #96c465 ;
+}
+/*== Removal End==*/
+
+.panel p {
+  float : left ; 
+  width : 420px;
+  clear : right ;
+  text-align : justify ;
+  margin : 25px 0 10px 0;
+  font-size : 14px ; 
+  color : #aaa ;
+  line-height : 1.2em
+}
+.panel h7 { 
+  float : left ; 
+  width: 200px; 
+  font-size : 14px ; 
+  color : #999 ;
+  font-weight : bold ;
+  font-style : italic ;
+}
+.control { 
+  position : absolute ; 
+  bottom : 20px; 
+  right : 30px;
+}
+.control span {
+  background-color : rgba(0,0,0,0.1) ; 
+  padding : 5px; 
+  display : inline-block ;
+  vertical-align : top ;
+  margin-left : 5px ;
+  border-radius : 50%;
+  cursor : pointer ;
+  transition : 0.3s ease-in
+}
+.ContActive {
+  background-color : #bbb !important ;
+}
+/* Bootstrap */
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
